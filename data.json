@@ -1,9 +1,9 @@
 {
     "instansi": {
-      "nama": "INSTANSI ABCD",
-      "alamat": "Jl. Contoh Alamat No. 123, Jakarta",
-      "telepon": "(021) 123-4567",
-      "email": "info@instansi-abcd.go.id"
+      "nama": "KPU KABUPATEN CIAMIS",
+      "alamat": "Jl. Jend. Sudirman No.43, Ciamis, Jawa Barat 46211",
+      "telepon": "(0265) 771012",
+      "website": "https://kab-ciamis.kpu.go.id/"
     },
     "aplikasi": [
       {

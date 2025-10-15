@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Instansi ABCD</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2><i class="fas fa-building"></i> INSTANSI ABCD</h2>
+                <button class="toggle-btn" id="toggleSidebar">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="app-list">
+                <a href="https://aplikasi-keuangan.com" class="app-link">
+                    <i class="fas fa-wallet"></i>
+                    <span>Keuangan</span>
+                </a>
+                <a href="https://aplikasi-hr.com" class="app-link">
+                    <i class="fas fa-users"></i>
+                    <span>HR & SDM</span>
+                </a>
+                <a href="https://aplikasi-asset.com" class="app-link">
+                    <i class="fas fa-building"></i>
+                    <span>Manajemen Asset</span>
+                </a>
+                <a href="https://aplikasi-pengadaan.com" class="app-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>E-Pengadaan</span>
+                </a>
+                <a href="https://aplikasi-arsip.com" class="app-link">
+                    <i class="fas fa-archive"></i>
+                    <span>E-Arsip</span>
+                </a>
+                <a href="https://aplikasi-laporan.com" class="app-link">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>E-Laporan</span>
+                </a>
+                <a href="https://portal-berita.com" class="app-link">
+                    <i class="fas fa-newspaper"></i>
+                    <span>Portal Berita</span>
+                </a>
+                <a href="https://sistem-surat.com" class="app-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>E-Surat</span>
+                </a>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content" id="mainContent">
+            <header class="header">
+                <h1>Dashboard Instansi</h1>
+                <div class="header-controls">
+                    <span id="currentDate" class="date-display"></span>
+                    <label class="dark-mode-toggle">
+                        <input type="checkbox" id="darkModeToggle">
+                        <span class="toggle-slider"></span>
+                        <i class="fas fa-moon"></i>
+                    </label>
+                </div>
+            </header>
+
+            <!-- Greeting Banner -->
+            <div class="greeting-banner" id="greetingBanner">
+                <div class="banner-content">
+                    <i class="fas fa-bullhorn"></i>
+                    <div>
+                        <h3>Pengumuman</h3>
+                        <p id="greetingMessage">Selamat beraktivitas! Semoga hari Anda menyenangkan.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Welcome Section -->
+            <section class="welcome-section">
+                <div class="logo-section">
+                    <img src="https://via.placeholder.com/150x150/3498db/ffffff?text=LOGO" 
+                         alt="Logo Instansi ABCD" 
+                         class="logo"
+                         onerror="this.src='https://via.placeholder.com/150x150/3498db/ffffff?text=LOGO'">
+                </div>
+                <div class="welcome-text">
+                    <h2>Selamat Datang di Instansi ABCD</h2>
+                    <p id="currentDateTime" class="datetime"></p>
+                </div>
+            </section>
+
+            <!-- News Section -->
+            <section class="news-section">
+                <h3><i class="fas fa-newspaper"></i> Berita & Kegiatan Terkini</h3>
+                <div class="news-carousel">
+                    <div class="news-item active">
+                        <img src="https://via.placeholder.com/400x200/3498db/ffffff?text=Pengumuman+Resmi" alt="Pengumuman">
+                        <div class="news-content">
+                            <h4>Pengumuman Resmi Instansi</h4>
+                            <p>Informasi terbaru mengenai kebijakan dan pengumuman penting</p>
+                            <a href="https://portal-berita.com/pengumuman1" class="news-link">Baca Selengkapnya →</a>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <img src="https://via.placeholder.com/400x200/e74c3c/ffffff?text=Kegiatan+Internal" alt="Kegiatan">
+                        <div class="news-content">
+                            <h4>Kegiatan Internal</h4>
+                            <p>Update kegiatan dan acara internal instansi terkini</p>
+                            <a href="https://portal-berita.com/kegiatan1" class="news-link">Baca Selengkapnya →</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="right-sidebar">
+            <!-- Calendar Section -->
+            <div class="calendar-section">
+                <h4><i class="fas fa-calendar-alt"></i> Kalender</h4>
+                <div class="calendar-header">
+                    <button id="prevMonth"><i class="fas fa-chevron-left"></i></button>
+                    <h5 id="currentMonth"></h5>
+                    <button id="nextMonth"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="calendar-grid" id="calendar"></div>
+            </div>
+
+            <!-- Events Section -->
+            <div class="events-section">
+                <h4><i class="fas fa-bell"></i> Kegiatan Mendatang</h4>
+                <div id="upcomingEvents">
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span class="event-day">17</span>
+                            <span class="event-month">Agu</span>
+                        </div>
+                        <div class="event-details">
+                            <h5>Hari Kemerdekaan RI</h5>
+                            <p>Hari nasional</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span class="event-day">05</span>
+                            <span class="event-month">Sep</span>
+                        </div>
+                        <div class="event-details">
+                            <h5>Rapat Koordinasi</h5>
+                            <p>Rapat bulanan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+{
+    "instansi": {
+      "nama": "INSTANSI ABCD",
+      "alamat": "Jl. Contoh Alamat No. 123, Jakarta",
+      "telepon": "(021) 123-4567",
+      "email": "info@instansi-abcd.go.id"
+    },
+    "aplikasi": [
+      {
+        "nama": "Keuangan",
+        "url": "https://aplikasi-keuangan.com",
+        "ikon": "fas fa-wallet",
+        "deskripsi": "Sistem manajemen keuangan dan anggaran"
+      },
+      {
+        "nama": "HR & SDM",
+        "url": "https://aplikasi-hr.com",
+        "ikon": "fas fa-users",
+        "deskripsi": "Manajemen sumber daya manusia dan kepegawaian"
+      },
+      {
+        "nama": "Manajemen Asset",
+        "url": "https://aplikasi-asset.com",
+        "ikon": "fas fa-building",
+        "deskripsi": "Sistem inventaris dan manajemen aset instansi"
+      },
+      {
+        "nama": "E-Pengadaan",
+        "url": "https://aplikasi-pengadaan.com",
+        "ikon": "fas fa-shopping-cart",
+        "deskripsi": "Sistem pengadaan barang dan jasa elektronik"
+      },
+      {
+        "nama": "E-Arsip",
+        "url": "https://aplikasi-arsip.com",
+        "ikon": "fas fa-archive",
+        "deskripsi": "Sistem kearsipan digital terintegrasi"
+      },
+      {
+        "nama": "E-Laporan",
+        "url": "https://aplikasi-laporan.com",
+        "ikon": "fas fa-chart-bar",
+        "deskripsi": "Sistem pelaporan dan dashboard kinerja"
+      },
+      {
+        "nama": "Portal Berita",
+        "url": "https://portal-berita.com",
+        "ikon": "fas fa-newspaper",
+        "deskripsi": "Portal berita dan pengumuman internal"
+      },
+      {
+        "nama": "E-Surat",
+        "url": "https://sistem-surat.com",
+        "ikon": "fas fa-envelope",
+        "deskripsi": "Sistem surat menyurat elektronik"
+      }
+    ],
+    "berita": [
+      {
+        "id": 1,
+        "judul": "Pengumuman Resmi Instansi",
+        "deskripsi": "Informasi terbaru mengenai kebijakan dan pengumuman penting",
+        "gambar": "https://via.placeholder.com/400x200/3498db/ffffff?text=Pengumuman+Resmi",
+        "url": "https://portal-berita.com/pengumuman1",
+        "tanggal": "2024-01-15",
+        "kategori": "pengumuman"
+      },
+      {
+        "id": 2,
+        "judul": "Kegiatan Internal Instansi",
+        "deskripsi": "Update kegiatan dan acara internal instansi terkini",
+        "gambar": "https://via.placeholder.com/400x200/e74c3c/ffffff?text=Kegiatan+Internal",
+        "url": "https://portal-berita.com/kegiatan1",
+        "tanggal": "2024-01-14",
+        "kategori": "kegiatan"
+      },
+      {
+        "id": 3,
+        "judul": "Berita Nasional Terkini",
+        "deskripsi": "Informasi perkembangan terbaru tingkat nasional",
+        "gambar": "https://via.placeholder.com/400x200/2ecc71/ffffff?text=Berita+Nasional",
+        "url": "https://portal-berita.com/nasional1",
+        "tanggal": "2024-01-13",
+        "kategori": "nasional"
+      }
+    ],
+    "kalender": {
+      "tahun": 2024,
+      "hari_libur_nasional": {
+        "01-01": "Tahun Baru 2024 Masehi",
+        "08-02": "Tahun Baru Imlek 2575",
+        "11-03": "Hari Raya Nyepi 1946 Saka",
+        "29-03": "Wafat Isa Al-Masih",
+        "10-04": "Hari Raya Idul Fitri 1445 H",
+        "11-04": "Hari Raya Idul Fitri 1445 H",
+        "01-05": "Hari Buruh Internasional",
+        "09-05": "Kenaikan Isa Al-Masih",
+        "23-05": "Hari Raya Waisak 2568 BE",
+        "01-06": "Hari Lahir Pancasila",
+        "17-06": "Hari Raya Idul Adha 1445 H",
+        "07-07": "Tahun Baru Islam 1446 H",
+        "17-08": "Hari Kemerdekaan RI",
+        "16-09": "Maulid Nabi Muhammad SAW",
+        "25-12": "Hari Natal"
+      }
+    }
+  }
